@@ -1,5 +1,5 @@
 # webdavhttps.go
-/*
+
 webdav via https in go:
 
 create the user to start webdavproces as non-root user:
@@ -7,7 +7,9 @@ The -r option creates a system user, and -s /bin/false sets the user’s shell t
 sudo useradd -r -s /bin/false webdavuser
 
 Adjust the permissions (755 or otherwise) as necessary, depending on whether the server needs write access or not.
+
 sudo chown webdavuser:webdavuser /path/to/davdir
+
 sudo chmod -R 755 /path/to/davdir
 
 Initialize a new Go module:
