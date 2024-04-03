@@ -16,8 +16,11 @@ Initialize a new Go module:
 go mod init securewebdav
 
 Fetch the required dependencies:
+
 go get -u golang.org/x/net/webdav
+
 Build WebDAV server:
+
 go build securewebdav.go
 
 Limit Network Exposure: Bind the service to a non-privileged port (above 1024) to avoid the need for root privileges to bind to ports 80 or 443
